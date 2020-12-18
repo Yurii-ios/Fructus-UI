@@ -13,6 +13,7 @@
 		F1321401258D22AD002E1F66 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1321400258D22AD002E1F66 /* Preview Assets.xcassets */; };
 		F132140D258D3851002E1F66 /* FruitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F132140C258D3851002E1F66 /* FruitCard.swift */; };
 		F1321410258D5170002E1F66 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F132140F258D516F002E1F66 /* StartButtonView.swift */; };
+		F1321413258D6148002E1F66 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1321412258D6148002E1F66 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F1321402258D22AD002E1F66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F132140C258D3851002E1F66 /* FruitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCard.swift; sourceTree = "<group>"; };
 		F132140F258D516F002E1F66 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		F1321412258D6148002E1F66 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				F13213F9258D22AC002E1F66 /* FructusApp.swift */,
 				F13213FB258D22AC002E1F66 /* ContentView.swift */,
+				F1321412258D6148002E1F66 /* OnboardingView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				F13213FC258D22AC002E1F66 /* ContentView.swift in Sources */,
 				F1321410258D5170002E1F66 /* StartButtonView.swift in Sources */,
 				F132140D258D3851002E1F66 /* FruitCard.swift in Sources */,
+				F1321413258D6148002E1F66 /* OnboardingView.swift in Sources */,
 				F13213FA258D22AC002E1F66 /* FructusApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
