@@ -28,6 +28,7 @@ struct FruitCard: View {
                     .font(.largeTitle)
                     .fontWeight(.heavy)
                     .shadow(color: Color(red: 0, green: 0, blue: 0, opacity: 0.15), radius: 2, x: 2, y: 2)
+                
                 //Fruit: Headline
                 Text("Blueberries are sweet, nutritions and widly popular fruit all over the world.")
                     .foregroundColor(.white)
@@ -36,6 +37,7 @@ struct FruitCard: View {
                     .frame(maxWidth: 480)
                 
                 //Button: Start
+                StartButtonView()
             } //: VSTACK
         } //: ZSTACK
         .frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity, alignment: .center)
