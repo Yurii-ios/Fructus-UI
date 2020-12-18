@@ -9,7 +9,7 @@ import SwiftUI
 
 //MARK: - FRUITS DATA MODEL
 
-struct fruit: Identifiable {
+struct Fruit: Identifiable {
     var id = UUID()
     var title: String
     var headline: String
