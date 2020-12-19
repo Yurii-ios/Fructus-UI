@@ -18,6 +18,10 @@ struct FruitCard: View {
         // create Vstack
         ZStack {
             VStack(spacing: 20) {
+                Text("hello")
+                    .font(.largeTitle)
+                    .bold()
+                    .accentColor(.white)
                 //Fruit: Image
                 Image(fruit.image)
                     .resizable()
