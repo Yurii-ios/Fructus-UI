@@ -37,6 +37,8 @@ struct FruitDetailView: View {
                             .fontWeight(.bold)
                             .foregroundColor(fruit.gradientColors[1])
                         //DESCRIPTION
+                        Text(fruit.description)
+                            .multilineTextAlignment(.leading)
                         
                         // LINK
              
