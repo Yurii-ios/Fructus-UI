@@ -33,7 +33,9 @@ struct FruitDetailView: View {
                         //NUTRIENTS
                         
                         //SUBHEADLINE
-                        
+                        Text("Learn more about \(fruit.title)".uppercased())
+                            .fontWeight(.bold)
+                            .foregroundColor(fruit.gradientColors[1])
                         //DESCRIPTION
                         
                         // LINK
