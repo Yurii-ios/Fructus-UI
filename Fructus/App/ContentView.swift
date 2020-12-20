@@ -11,16 +11,19 @@ struct ContentView: View {
     //MARK: - PROPERTIES
     // create var that will store all of the fruits
     var fruits: [Fruit] = fruitsData
-   
+    
     //MARK: - BODY
     var body: some View {
         // create NavigationBar
         NavigationView {
             List {
                 ForEach(fruits.shuffled()) { item  in
-                    FruitRowView(fruit: item)
-                        .padding(.vertical, 4)
+                    NavigationLink(
+                        destination: FruitDetailView(fruit: item)) {
+                        FruitRowView(fruit: item)
+                            .padding(.vertical, 4)
                         
+                    }
                 }
             }
             .navigationTitle("Fruits")
@@ -33,6 +36,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(fruits: fruitsData)
-            
+        
     }
 }
