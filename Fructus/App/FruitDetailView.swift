@@ -13,7 +13,36 @@ struct FruitDetailView: View {
    
     //MARK: - BODY
     var body: some View {
-        Text(fruit.title)
+        NavigationView {
+           // add vertical ScrollView inside navigation
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack(alignment: .center, spacing: 20 ) {
+                    //HEADER
+                    
+                    VStack(alignment: .leading, spacing: 20) {
+                        //TITLE
+                        /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+                            .font(.largeTitle)
+                            .fontWeight(.heavy)
+                            .foregroundColor(fruit.gradientColors[1])
+                        //HEADLINE
+                        
+                        //NUTRIENTS
+                        
+                        //SUBHEADLINE
+                        
+                        //DESCRIPTION
+                        
+                        // LINK
+             
+                        
+                    } //: VSTACK
+                    .padding(.horizontal, 20)
+                    // centralize on the screen iPan screen
+                    .frame(maxWidth: 640, alignment: .center)
+                } //: VSTACK
+            } //: SCROLL
+        } //: NAVIGATION
     }
 }
 
