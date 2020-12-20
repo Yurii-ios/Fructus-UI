@@ -18,7 +18,7 @@ struct FruitDetailView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .center, spacing: 20 ) {
                     //HEADER
-                    
+                    FruitHeaderView(fruit: fruit)
                     VStack(alignment: .leading, spacing: 20) {
                         //TITLE
                         /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
@@ -48,7 +48,12 @@ struct FruitDetailView: View {
                     // centralize on the screen iPan screen
                     .frame(maxWidth: 640, alignment: .center)
                 } //: VSTACK
+                // hidden empty space between navigation and view
+                .navigationBarTitle(fruit.title, displayMode: .inline)
+                .navigationBarHidden(true)
             } //: SCROLL
+            //IgnoringSafeArea
+            .edgesIgnoringSafeArea(.top)
         } //: NAVIGATION
     }
 }
