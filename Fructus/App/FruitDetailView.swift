@@ -10,11 +10,11 @@ import SwiftUI
 struct FruitDetailView: View {
     //MARK: - PROPERTIES
     var fruit: Fruit
-   
+    
     //MARK: - BODY
     var body: some View {
         NavigationView {
-           // add vertical ScrollView inside navigation
+            // add vertical ScrollView inside navigation
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .center, spacing: 20 ) {
                     //HEADER
@@ -41,7 +41,11 @@ struct FruitDetailView: View {
                             .multilineTextAlignment(.leading)
                         
                         // LINK
-             
+                        SourceLinkView()
+                            // spacing between view and GroupBox
+                            .padding(.top, 10)
+                            // spasing GroupBox and bottom screen
+                            .padding(.bottom, 40)
                         
                     } //: VSTACK
                     .padding(.horizontal, 20)
