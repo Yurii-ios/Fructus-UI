@@ -11,6 +11,7 @@ struct ContentView: View {
     //MARK: - PROPERTIES
     // create var that will store all of the fruits
     var fruits: [Fruit] = fruitsData
+   
     //MARK: - BODY
     var body: some View {
         // create NavigationBar
@@ -32,5 +33,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(fruits: fruitsData)
+            
     }
 }
