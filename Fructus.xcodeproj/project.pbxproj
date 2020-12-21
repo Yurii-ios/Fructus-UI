@@ -20,6 +20,7 @@
 		F1397BB6258FEF3900375B81 /* FruitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1397BB5258FEF3900375B81 /* FruitHeaderView.swift */; };
 		F1397BB9258FF89200375B81 /* SourceLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1397BB8258FF89200375B81 /* SourceLinkView.swift */; };
 		F1A1E72F2591502C00C4CEBD /* FruitNutritionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A1E72E2591502C00C4CEBD /* FruitNutritionsView.swift */; };
+		F1A1E73225915C7100C4CEBD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A1E73125915C7100C4CEBD /* SettingsView.swift */; };
 		F1FF11E8258EAF9500851E43 /* FruitRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FF11E7258EAF9500851E43 /* FruitRowView.swift */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		F1397BB5258FEF3900375B81 /* FruitHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitHeaderView.swift; sourceTree = "<group>"; };
 		F1397BB8258FF89200375B81 /* SourceLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLinkView.swift; sourceTree = "<group>"; };
 		F1A1E72E2591502C00C4CEBD /* FruitNutritionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutritionsView.swift; sourceTree = "<group>"; };
+		F1A1E73125915C7100C4CEBD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		F1FF11E7258EAF9500851E43 /* FruitRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,6 +100,7 @@
 				F13213FB258D22AC002E1F66 /* ContentView.swift */,
 				F1321412258D6148002E1F66 /* OnboardingView.swift */,
 				F1397BB1258FC7C000375B81 /* FruitDetailView.swift */,
+				F1A1E73125915C7100C4CEBD /* SettingsView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				F1321413258D6148002E1F66 /* OnboardingView.swift in Sources */,
 				F1321417258D656A002E1F66 /* FruitModel.swift in Sources */,
 				F13213FA258D22AC002E1F66 /* FructusApp.swift in Sources */,
+				F1A1E73225915C7100C4CEBD /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
