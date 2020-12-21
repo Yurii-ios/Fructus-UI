@@ -18,9 +18,20 @@ struct FruitNutritionsView: View {
         GroupBox() {
             DisclosureGroup("Nutritional value per 100g") {
                 ForEach(0..<nutrions.count, id: \.self) { item in
-                    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-                }
-            }
+                    Divider().padding(.vertical, 2)
+                    HStack {
+                        Group {
+                            Image(systemName: "info.circle")
+                            Text(nutrions[item])
+                        }
+                        .foregroundColor(fruit.gradientColors[1])
+                        .font(Font.system(.body).bold())
+                        Spacer(minLength: 20)
+                        Text(fruit.nutrition[item])
+                            .multilineTextAlignment(.trailing)
+                    } //: HSTACK
+                } //: LOOP
+            } //: DisclosureGroup
         } //: GROUPBOX
     }
 }
