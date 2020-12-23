@@ -10,6 +10,8 @@ import SwiftUI
 struct SettingsView: View {
     //MARK: - PROPERTIES
     @Environment(\.presentationMode) var presentationMode
+    
+    @AppStorage("isOnboarding") var isOnboarding: Bool = false
     //MARK: - BODY
     var body: some View {
         NavigationView {
@@ -46,6 +48,10 @@ struct SettingsView: View {
                             .layoutPriority(1)
                             .font(.footnote)
                             .multilineTextAlignment(.leading)
+                        
+                        Toggle(isOn: $isOnboarding){
+                            Text("Restart".uppercased())
+                        }
                     }
                     
                     //MARK: - SECTION 3
