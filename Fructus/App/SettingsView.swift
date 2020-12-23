@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SettingsView: View {
     //MARK: - PROPERTIES
-    
+    @Environment(\.presentationMode) var presentationMode
     //MARK: - BODY
     var body: some View {
         NavigationView {
@@ -18,6 +18,14 @@ struct SettingsView: View {
                     Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
                 } //: VStack
                 .navigationBarTitle(Text("Settings"), displayMode: .large)
+                .navigationBarItems(
+                    trailing:
+                        Button(action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }) {
+                            Image(systemName: "xmark")
+                        }
+                )
                 .padding()
             } //: ScrollView
         } //: NavigationView
