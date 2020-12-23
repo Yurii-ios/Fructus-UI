@@ -41,6 +41,8 @@ struct ContentView: View {
                     }
             )
         } //: NavigationView
+        // for iPad
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
