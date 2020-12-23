@@ -35,6 +35,18 @@ struct SettingsView: View {
                     }
                     
                     //MARK: - SECTION 2
+                    GroupBox(
+                    label: SettingsLabelView(labelText: "Customization", labelImage: "paintbrush")
+                    ) {
+                        Divider().padding(.vertical, 4)
+                        
+                        Text("If you wish, you can restart the application by toggle the switch in this box. That way it starts the onboarding process and you will see the welcome screen again.")
+                            .padding(.vertical, 8)
+                            .frame(minHeight: 60)
+                            .layoutPriority(1)
+                            .font(.footnote)
+                            .multilineTextAlignment(.leading)
+                    }
                     
                     //MARK: - SECTION 3
                     
